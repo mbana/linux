@@ -1,0 +1,14 @@
+[Unit]
+Description=bluetooth-break-timer.service
+Requires=bluetooth
+
+[Service]
+# User=mbana
+# Type=simple
+# TimeoutStartSec=0
+ExecStart=/usr/bin/ffplay -autoexit -hide_banner -nodisp -loop 8 -loglevel level+warning %h/setup/pc/bluetooth-speakers/1-second-of-silence.mp3
+ExecStop=/usr/bin/ffplay -autoexit -hide_banner -nodisp -f lavfi -i "sine=frequency=512:duration=1" -autoexit -nodisp -volume 100 -loglevel level+warning
+Restart=always
+
+[Install]
+WantedBy=default.target
