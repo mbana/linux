@@ -1,0 +1,22 @@
+#!/usr/bin/bash
+# References:
+# * https://superuser.com/questions/720662/have-yum-update-vmlinuz-initramfs-symlinks-in-boot-automatically-fedora
+# * https://forums.fedoraforum.org/showthread.php?319584-Maintaining-entries-in
+
+KERNEL_VERSION="$1" # 6.1.8-200.fc37.x86_64
+KERNEL_IMAGE="$2" # /boot/vmlinuz-6.1.8-200.fc37.x86_64
+
+echo
+echo
+echo "   /etc/kernel/postinst.d/symlink-kernel:"
+echo "      arguments:" $(printf "'%s' "  "$@")
+echo
+
+ln -sf ${KERNEL_IMAGE} /boot/vmlinuz
+ln -sf /boot/initramfs-${KERNEL_VERSION}.img /boot/initramfs.img
+
+echo "   SUCCESS: symlink created /boot/vmlinuz to ${KERNEL_IMAGE}" >&2
+echo "   SUCCESS: symlink created /boot/initramfs.img to /boot/initramfs-${KERNEL_VERSION}.img" >&2
+echo
+
+exit 0

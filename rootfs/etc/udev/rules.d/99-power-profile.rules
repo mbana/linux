@@ -1,0 +1,5 @@
+# Switch to performance mode when power cable is plugged in
+
+# https://www.reddit.com/r/gnome/comments/snihk3/comment/hw5hmzn/?utm_source=share&utm_medium=web2x&context=3
+SUBSYSTEM=="power_supply",ENV{POWER_SUPPLY_ONLINE}=="0",RUN+="/usr/bin/powerprofilesctl set power-saver"
+SUBSYSTEM=="power_supply",ENV{POWER_SUPPLY_ONLINE}=="1",RUN+="/usr/bin/powerprofilesctl set performance"
