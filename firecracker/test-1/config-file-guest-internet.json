@@ -1,0 +1,46 @@
+{
+    "boot-source": {
+        "kernel_image_path": "/home/mbana/dev/linux/firecracker/test-1/vmlinux-5.10.204",
+        "boot_args": "console=ttyS0,115200n8 reboot=k panic=1 pci=off nomodules random.trust_cpu=on",
+        "initrd_path": null
+    },
+    "drives": [
+        {
+            "drive_id": "rootfs",
+            "partuuid": null,
+            "is_root_device": true,
+            "cache_type": "Unsafe",
+            "is_read_only": false,
+            "path_on_host": "/home/mbana/dev/linux/firecracker/test-1/ubuntu-22.04.ext4",
+            "io_engine": "Sync",
+            "rate_limiter": null
+        }
+    ],
+    "logger": {
+        "log_path": "/home/mbana/dev/linux/firecracker/test-1/firecracker.log",
+        "level": "Trace",
+        "show_level": true,
+        "show_log_origin": true
+    },
+    "machine-config": {
+        "vcpu_count": 1,
+        "mem_size_mib": 1024,
+        "smt": false,
+        "track_dirty_pages": false
+    },
+    "cpu-config": null,
+    "balloon": null,
+    "network-interfaces": [
+        {
+            "iface_id": "eth0",
+            "guest_mac": "06:00:AC:10:00:02",
+            "host_dev_name": "tap0"
+        }
+    ],
+    "vsock": null,
+    "metrics": {
+        "metrics_path": "/home/mbana/dev/linux/firecracker/test-1/metrics.fifo"
+    },
+    "mmds-config": null,
+    "entropy": null
+}
