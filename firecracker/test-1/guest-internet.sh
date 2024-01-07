@@ -63,7 +63,7 @@ METRICS_PIPE="$(pwd)/metrics.fifo"
 rm -f "${METRICS_PIPE}"
 mkfifo "${METRICS_PIPE}"
 
-firecracker --api-sock "${API_SOCKET}" --config-file config-file-guest-internet.json
+firecracker --api-sock "${API_SOCKET}" --boot-timer --config-file config-file-guest-internet.json
 
 ssh -i ./ubuntu-22.04.id_rsa root@172.16.0.2 "
 ip addr add 172.16.0.2/24 dev eth0

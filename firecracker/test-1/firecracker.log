@@ -1,39 +1,40 @@
-2023-12-28T16:29:38.605489636 [anonymous-instance:main:DEBUG:src/vmm/src/builder.rs:351] event_start: build microvm for boot
-2023-12-28T16:29:38.633951218 [anonymous-instance:main:DEBUG:src/vmm/src/builder.rs:353] event_end: build microvm for boot
-2023-12-28T16:29:38.633973449 [anonymous-instance:main:DEBUG:src/vmm/src/builder.rs:355] event_start: boot microvm
-2023-12-28T16:29:38.633979472 [anonymous-instance:main:INFO:src/vmm/src/device_manager/mmio.rs:386] Artificially kick devices.
-2023-12-28T16:29:38.634072557 [anonymous-instance:main:DEBUG:src/vmm/src/builder.rs:360] event_end: boot microvm
-2023-12-28T16:29:38.634079219 [anonymous-instance:main:INFO:src/firecracker/src/main.rs:574] Successfully started microvm that was configured from one single json
-2023-12-28T16:29:38.837095067 [anonymous-instance:fc_vcpu 0:WARN:src/vmm/src/devices/legacy/i8042.rs:151] Failed to trigger i8042 kbd interrupt (disabled by guest OS)
-2023-12-28T16:29:38.845778222 [anonymous-instance:fc_vcpu 0:WARN:src/vmm/src/devices/legacy/i8042.rs:151] Failed to trigger i8042 kbd interrupt (disabled by guest OS)
-2023-12-28T15:43:42.328613991 [anonymous-instance:main:INFO:src/vmm/src/lib.rs:818] Vmm is stopping.
-2023-12-28T15:43:42.328784300 [anonymous-instance:fc_api:DEBUG:src/api_server/src/lib.rs:99] shutdown request received, API server thread ending.
-2023-12-28T15:43:42.328872577 [anonymous-instance:main:INFO:src/vmm/src/lib.rs:818] Vmm is stopping.
-2023-12-28T15:43:42.386796256 [anonymous-instance:main:INFO:src/firecracker/src/main.rs:100] Firecracker exiting successfully. exit_code=0
-e metrics: Resource temporarily unavailable (os error 11)
-2023-12-28T15:37:39.087073529 [anonymous-instance:main:INFO:src/firecracker/src/main.rs:100] Firecracker exiting successfully. exit_code=0
+2023-12-28T19:11:09.167008530 [anonymous-instance:main:DEBUG:src/vmm/src/builder.rs:351] event_start: build microvm for boot
+2023-12-28T19:11:09.190752096 [anonymous-instance:main:DEBUG:src/vmm/src/builder.rs:353] event_end: build microvm for boot
+2023-12-28T19:11:09.190774100 [anonymous-instance:main:DEBUG:src/vmm/src/builder.rs:355] event_start: boot microvm
+2023-12-28T19:11:09.190781283 [anonymous-instance:main:INFO:src/vmm/src/device_manager/mmio.rs:386] Artificially kick devices.
+2023-12-28T19:11:09.190889899 [anonymous-instance:main:DEBUG:src/vmm/src/builder.rs:360] event_end: boot microvm
+2023-12-28T19:11:09.190897583 [anonymous-instance:main:INFO:src/firecracker/src/main.rs:574] Successfully started microvm that was configured from one single json
+2023-12-28T19:11:09.389853786 [anonymous-instance:fc_vcpu 0:WARN:src/vmm/src/devices/legacy/i8042.rs:151] Failed to trigger i8042 kbd interrupt (disabled by guest OS)
+2023-12-28T19:11:09.400225382 [anonymous-instance:fc_vcpu 0:WARN:src/vmm/src/devices/legacy/i8042.rs:151] Failed to trigger i8042 kbd interrupt (disabled by guest OS)
+2023-12-28T19:12:55.546036214 [anonymous-instance:main:ERROR:src/vmm/src/signal_handler.rs:119] Shutting down VM after intercepting signal 1, code 0.
+:fc_api:DEBUG:src/api_server/src/lib.rs:99] shutdown request received, API server thread ending.
+2023-12-28T19:10:52.683489773 [anonymous-instance:main:INFO:src/vmm/src/lib.rs:818] Vmm is stopping.
+2023-12-28T19:10:52.734885898 [anonymous-instance:main:INFO:src/firecracker/src/main.rs:100] Firecracker exiting successfully. exit_code=0
+d to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
+2023-12-28T18:20:34.035707801 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
+2023-12-28T18:21:34.035675736 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
+2023-12-28T18:22:34.035017472 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
+2023-12-28T18:23:34.035905859 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
+2023-12-28T18:24:34.035952306 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
+2023-12-28T18:25:34.035402944 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
+2023-12-28T18:26:34.034930349 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
+2023-12-28T18:27:34.035688698 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
+2023-12-28T18:28:34.035894720 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
+2023-12-28T18:29:34.035722111 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
+2023-12-28T18:30:34.036073958 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
+2023-12-28T18:31:34.035635938 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
+2023-12-28T18:32:34.035604357 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
+2023-12-28T18:33:34.034808256 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
+2023-12-28T18:34:34.035713455 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
+2023-12-28T18:35:34.035700296 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
+2023-12-28T18:36:34.035633382 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
+2023-12-28T18:37:34.035483062 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
+2023-12-28T18:38:20.903866476 [anonymous-instance:main:INFO:src/vmm/src/lib.rs:818] Vmm is stopping.
+2023-12-28T18:38:20.904102974 [anonymous-instance:fc_api:DEBUG:src/api_server/src/lib.rs:99] shutdown request received, API server thread ending.
+2023-12-28T18:38:20.904209840 [anonymous-instance:main:INFO:src/vmm/src/lib.rs:818] Vmm is stopping.
+2023-12-28T18:38:20.904398740 [anonymous-instance:main:ERROR:src/vmm/src/lib.rs:899] Failed to write metrics while stopping: Failed to write metrics: Resource temporarily unavailable (os error 11)
+2023-12-28T18:38:20.943889350 [anonymous-instance:main:INFO:src/firecracker/src/main.rs:100] Firecracker exiting successfully. exit_code=0
  write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
-2023-12-28T11:42:36.127918218 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
-2023-12-28T11:43:36.128191048 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
-2023-12-28T11:44:36.128118518 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
-2023-12-28T11:45:36.127419420 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
-2023-12-28T11:46:36.127470119 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
-2023-12-28T11:47:36.128115076 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
-2023-12-28T11:48:36.127927412 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
-2023-12-28T11:49:36.127277199 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
-2023-12-28T11:50:36.127025133 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
-2023-12-28T11:51:36.127081289 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
-2023-12-28T11:52:36.127960683 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
-2023-12-28T11:53:36.128640566 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
-2023-12-28T11:54:36.128098098 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
-2023-12-28T11:55:36.127467735 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
-2023-12-28T11:56:36.127960663 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
-2023-12-28T11:57:36.128111827 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
-2023-12-28T11:58:36.128446993 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
-2023-12-28T11:59:36.128101574 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
-2023-12-28T12:00:36.128215034 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
-2023-12-28T12:01:36.127615469 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
-2023-12-28T12:02:36.127500493 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
 2023-12-28T12:03:36.128271824 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
 2023-12-28T12:04:36.128187322 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)
 2023-12-28T12:05:36.128233013 [anonymous-instance:main:ERROR:src/firecracker/src/metrics.rs:52] Failed to write metrics: Failed to write metrics: Resource temporarily unavailable (os error 11)

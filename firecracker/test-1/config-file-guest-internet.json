@@ -1,7 +1,7 @@
 {
     "boot-source": {
         "kernel_image_path": "/home/mbana/dev/linux/firecracker/test-1/vmlinux-5.10.204",
-        "boot_args": "console=ttyS0,115200n8 reboot=k panic=1 pci=off nomodules random.trust_cpu=on",
+        "boot_args": "console=ttyS0,115200n8 reboot=k panic=1 pci=off nomodules",
         "initrd_path": null
     },
     "drives": [
@@ -11,7 +11,7 @@
             "is_root_device": true,
             "cache_type": "Unsafe",
             "is_read_only": false,
-            "path_on_host": "/home/mbana/dev/linux/firecracker/test-1/ubuntu-22.04.ext4",
+            "path_on_host": "/home/mbana/dev/linux/firecracker/test-1/ubuntu-22.04.ext4.large",
             "io_engine": "Sync",
             "rate_limiter": null
         }
