@@ -1,0 +1,7 @@
+deb http://archive.ubuntu.com/ubuntu    jammy           main
+deb http://de.archive.ubuntu.com/ubuntu jammy           main restricted universe
+deb http://de.archive.ubuntu.com/ubuntu jammy-security  main restricted universe
+deb http://de.archive.ubuntu.com/ubuntu jammy-updates   main restricted universe
+
+apt update
+apt install udev systemd-sysv openssh-server iproute2 curl socat python3-minimal iperf3 iputils-ping fio kmod tmux hwloc-nox vim-tiny trace-cmd linuxptp
