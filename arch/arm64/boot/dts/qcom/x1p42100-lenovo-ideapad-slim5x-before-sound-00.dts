@@ -9,7 +9,8 @@
 
 #include <dt-bindings/gpio/gpio.h>
 #include <dt-bindings/input/gpio-keys.h>
-#include <dt-bindings/input/input.h>
+// It compiles fine without the line below, so leaving it commented out.
+// #include <dt-bindings/input/input.h>
 #include <dt-bindings/pinctrl/qcom,pmic-gpio.h>
 #include <dt-bindings/regulator/qcom,rpmh-regulator.h>
 
@@ -1057,8 +1058,6 @@
 };
 
 &mdss_dp0 {
-	sound-name-prefix = "DisplayPort0";
-
 	status = "okay";
 };
 
@@ -1076,18 +1075,23 @@
 	link-frequencies = /bits/ 64 <1620000000 2700000000 5400000000 8100000000>;
 };
 
-&mdss_dp2 {
-	sound-name-prefix = "DisplayPort2";
+//&mdss_dp2 {
+//	status = "okay";
+//};
+//
+//&mdss_dp2_out {
+//	data-lanes = <0 1 2 3>;
+//	link-frequencies = /bits/ 64 <1620000000 2700000000 5400000000 8100000000>;
+//};
 
-	status = "okay";
-};
-
-&mdss_dp2_out {
-	link-frequencies = /bits/ 64 <1620000000 2700000000 5400000000 8100000000>;
-};
+//&mdss_dp2_phy {
+////	vdda-phy-supply = <&vreg_l3b>;
+////	vdda-pll-supply = <&vreg_l6b>;
+//
+//	status = "okay";
+//};
 
 &mdss_dp3 {
-	compatible = "qcom,x1e80100-dp";
 	/delete-property/ #sound-dai-cells;
 
 	pinctrl-0 = <&edp0_hpd_default>;
