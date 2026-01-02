@@ -21,7 +21,7 @@
 / {
 	model = "Medion SPRCHRGD 14 S1";
 	compatible = "medion,sprchrgd14s1", "qcom,x1e78100", "qcom,x1e80100";
-	// chassis-type = "laptop";
+	chassis-type = "laptop";
 
 	aliases {
 		serial0 = &uart21;
@@ -995,18 +995,19 @@
 // Some combination of `mdss_dp0` and `mdss_dp2 cause the system not to boot.
 // Leaving `mdss_dp2` disabled for now.
 &mdss_dp0 {
-	sound-name-prefix = "DisplayPort0";
-	// System will not boot with the below set.
-//  	status = "okay";
+	// sound-name-prefix = "DisplayPort0";
+
+ 	status = "okay";
 };
 
 &mdss_dp0_out {
 	link-frequencies = /bits/ 64 <1620000000 2700000000 5400000000 8100000000>;
 };
 
+// // System will not boot with ANY combination of the the below set.
 // &mdss_dp2 {
-// 	sound-name-prefix = "DisplayPort2";
-// 	status = "okay";
+// // 	sound-name-prefix = "DisplayPort2";
+// // 	status = "okay";
 // };
 
 &mdss_dp2_out {
@@ -1175,8 +1176,8 @@
 };
 
 &remoteproc_cdsp {
-	// firmware-name = "qcom/x1e80100/medion/qccdsp8380.mbn",
-	// 		"qcom/x1e80100/medion/cdsp_dtbs.elf";
+	firmware-name = "qcom/x1e80100/medion/qccdsp8380.mbn",
+			"qcom/x1e80100/medion/cdsp_dtbs.elf";
 
 	// // From Tuxedo Elite 14 Gen1 DTS - no battery indicato or external display with this firmare.
 	// firmware-name = "qcom/x1e80100/cdsp.mbn",
