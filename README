@@ -1,7 +1,15 @@
+## Main Changes
+
 See the branches below:
 
 1. `x1e80100-microsoft-romulus13`.
 2. `x1e80100-medion-sprchrgd-14-s1`.
+
+For `dtbs` generation run `./generate-dtbs.sh`, which uses the config `./configs/config-6.19.10-300.fc44.aarch6` that is obviously from Fedora 44.
+
+## TODO
+
+1. A CI task to generate the `dbts` would be useful.
 
 ---
 
